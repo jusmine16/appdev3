@@ -1,6 +1,8 @@
-import "dotenv/config";
+const dotenv = require("dotenv");
 
-export default ({ config }) => ({
+dotenv.config();
+
+module.exports = ({ config }) => ({
   ...config,
   name: "ButuanNews",
   slug: "butuannews",
